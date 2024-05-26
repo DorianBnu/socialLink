@@ -1,0 +1,96 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.profileLink a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+.profileLink a:hover {
+  color: black;
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+p {
+  color: white;
+  line-height: 3;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.mainPanel {
+  width: 365px;
+  border-radius: 15px;
+  padding: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 12%);
+}
+.mainPanel img {
+  display: block;
+  border-radius: 50%;
+  max-width: 110px;
+  margin: 15px auto;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+h2 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.profileLink {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.attribution {
+  color: white;
+  font-weight: 600;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 430px) {
+  .mainPanel {
+    height: 75%;
+    width: 65%;
+    min-width: none;
+  }
+  p {
+    line-height: 1;
+    font-size: 10px;
+  }
+  .mainPanel img {
+    margin-top: 0px;
+  }
+}
